@@ -1,0 +1,28 @@
+package com.estore.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.estore.model.Product;
+
+public class ProductDao {
+	private List<Product> productList;
+	
+	public List<Product> getProductList() {
+		
+		productList = new ArrayList<Product>();
+		
+		Product product1 = new Product();
+		product1.setName("Guitar1");
+		product1.setCategory("Instrument");
+		product1.setDescription("This is an awesome guitar!");
+		product1.setCondition("New");
+		product1.setStatus("Active");
+		product1.setManufacturer("Fender");
+		product1.setPrice(1000);
+		product1.setUnitInStock(10);
+		
+		
+		return productList;
+	}
+}

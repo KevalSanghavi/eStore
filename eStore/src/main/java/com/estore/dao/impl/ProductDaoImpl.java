@@ -36,7 +36,24 @@ public class ProductDaoImpl implements ProductDao {
 			session.close();
 		}
 	}
-
+	
+	public void editProduct(Product product) {
+		Session session = sessionFactory.openSession();
+		Transaction tx = null;
+		try {
+			tx = session.beginTransaction();
+			session.saveOrUpdate(product);
+			tx.commit();
+		} catch (HibernateException e) {
+			if (null != tx) {
+				tx.rollback();
+				e.printStackTrace();
+			}
+		} finally {
+			session.close();
+		}
+	}
+	
 	public Product getProductById(long productId) {
 		Session session = sessionFactory.openSession();
 		Transaction tx = null;

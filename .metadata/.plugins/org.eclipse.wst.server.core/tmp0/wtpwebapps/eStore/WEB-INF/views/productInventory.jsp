@@ -21,6 +21,7 @@
 					<th>Price</th>
 					<th></th>
 					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<c:forEach items="${products}" var="product">
@@ -36,6 +37,9 @@
 					</a></td>
 					<td><a href="<spring:url value="/admin/productInventory/deleteProduct/${product.productId}" />">
 							<span class="glyphicon glyphicon-remove"></span>
+					</a></td>
+					<td><a href="<spring:url value="/admin/productInventory/editProduct/${product.productId}" />">
+							<span class="glyphicon glyphicon-pencil"></span>
 					</a></td>
 				</tr>
 			</c:forEach>

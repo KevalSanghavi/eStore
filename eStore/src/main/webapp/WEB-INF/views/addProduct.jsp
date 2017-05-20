@@ -15,7 +15,7 @@
 			method="post" commandName="product" enctype="multipart/form-data">
 
 			<div class="form-group">
-				<label for="name">Name</label>
+				<label for="name">Name</label> <form:errors path="productName" cssStyle="color: #ff0000;" />
 				<form:input path="productName" id="name" class="form-Control" />
 			</div>
 
@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="form-group">
-				<label for="price">Price</label>
+				<label for="price">Price</label> <form:errors path="productPrice" cssStyle="color: #ff0000;" />
 				<form:input path="productPrice" id="price" class="form-Control" />
 			</div>
 
@@ -56,7 +56,7 @@
 			</div>
 
 			<div class="form-group">
-				<label for="unitInStock">Unit In Stock</label>
+				<label for="unitInStock">Unit In Stock</label> <form:errors path="productUnitInStock" cssStyle="color: #ff0000;" />
 				<form:input path="productUnitInStock" id="unitInStock"
 					class="form-Control" />
 			</div>

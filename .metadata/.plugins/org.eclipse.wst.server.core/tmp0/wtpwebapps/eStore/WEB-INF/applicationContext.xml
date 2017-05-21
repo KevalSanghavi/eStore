@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd" 
+	xmlns:security="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.springframework.org/schema/beans">
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -38,5 +37,21 @@
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="10240000" />
 	</bean>
+	
+	<security:http auto-config="true">
+		<security:intercept-url pattern="/admin/**" access="ROLE_USER" />
+		<security:form-login login-page="/login" default-target-url="/login?error" 
+			username-parameter="username" password-parameter="password" />
+		<security:logout logout-success-url="/login?logout" />
+	</security:http>
+	
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:jdbc-user-service 
+				users-by-username-query="SELECT username, password, enabled FROM users WHERE username = ?" 
+				authorities-by-username-query="SELECT username, authority From authorities WHERE username = ?" 
+				data-source-ref="dataSource"/>
+		</security:authentication-provider>
+</security:authentication-manager>
 	
 </beans>

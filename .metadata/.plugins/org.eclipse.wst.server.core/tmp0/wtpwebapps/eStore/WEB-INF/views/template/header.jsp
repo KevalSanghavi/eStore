@@ -1,7 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%--
+  Created by IntelliJ IDEA.
+  User: Le
+  Date: 1/2/2016
+  Time: 5:14 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -54,7 +59,20 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="<c:url value="/admin/" />">Admin</a></li>
+                        <c:if test="${pageContext.request.userPrincipal.name != null}">
+                            <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
+                            <li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+                            <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
+                                <li><a href="<c:url value="/customer/cart" />">Cart</a></li>
+                            </c:if>
+                            <c:if test="${pageContext.request.userPrincipal.name  == 'admin'}">
+                                <li><a href="<c:url value="/admin" />">Admin</a></li>
+                            </c:if>
+                        </c:if>
+                        <c:if test="${pageContext.request.userPrincipal.name  == null}">
+                        <li><a href="<c:url value="/login/" />">Login</a></li>
+                        <li><a href="<c:url value="/register" />">Register</a></li>
+                        </c:if>
                     </ul>
                 </div>
             </div>

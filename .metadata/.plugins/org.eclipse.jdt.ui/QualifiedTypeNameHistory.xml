@@ -23,8 +23,15 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="com.estore.dao.CartDao"/>
-<fullyQualifiedTypeName name="com.estore.model.Cart"/>
 <fullyQualifiedTypeName name="com.estore.model.Product"/>
 <fullyQualifiedTypeName name="com.estore.dao.ProductDao"/>
 <fullyQualifiedTypeName name="com.estore.service.ProductService"/>
+<fullyQualifiedTypeName name="com.estore.model.BillingAddress"/>
+<fullyQualifiedTypeName name="com.estore.model.ShippingAddress"/>
+<fullyQualifiedTypeName name="com.estore.model.Customer"/>
+<fullyQualifiedTypeName name="com.estore.model.Users"/>
+<fullyQualifiedTypeName name="com.estore.model.Authorities"/>
+<fullyQualifiedTypeName name="com.estore.model.Cart"/>
+<fullyQualifiedTypeName name="com.estore.dao.CustomerDao"/>
+<fullyQualifiedTypeName name="com.estore.service.CustomerService"/>
 </qualifiedTypeNameHistroy>

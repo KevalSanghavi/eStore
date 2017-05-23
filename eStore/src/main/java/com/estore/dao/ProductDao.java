@@ -6,14 +6,13 @@ import com.estore.model.Product;
 
 public interface ProductDao {
 
+	List<Product> getProductList();
+
+	Product getProductById(int id);
+
 	void addProduct(Product product);
 
 	void editProduct(Product product);
 
-	Product getProductById(long productId);
-
-	List<Product> getAllProducts();
-
-	void deleteProduct(long productId);
-
+	void deleteProduct(Product product);
 }

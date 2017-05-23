@@ -15,7 +15,6 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
 <fullyQualifiedTypeName name="java.nio.file.Files"/>
-<fullyQualifiedTypeName name="com.estore.model.Product"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotEmpty"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Min"/>
 <fullyQualifiedTypeName name="javax.validation.Valid"/>
@@ -24,6 +23,8 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="com.estore.dao.CartDao"/>
-<fullyQualifiedTypeName name="com.estore.dao.ProductDao"/>
 <fullyQualifiedTypeName name="com.estore.model.Cart"/>
+<fullyQualifiedTypeName name="com.estore.model.Product"/>
+<fullyQualifiedTypeName name="com.estore.dao.ProductDao"/>
+<fullyQualifiedTypeName name="com.estore.service.ProductService"/>
 </qualifiedTypeNameHistroy>

@@ -1,9 +1,0 @@
-package com.estore.dao.impl;
-
-import com.estore.dao.ProductDao;
-
-public class ProductDaoImpl implements ProductDao {
-	
-	
-	
-}

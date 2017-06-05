@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Cart" key="selection"/>
+		<item value="InvalidCartWarning" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="InvalidCartWarning"/>
 			<item value="cart"/>
 			<item value="removeFromCart"/>
 			<item value="ng-click"/>
@@ -15,7 +16,6 @@
 			<item value="initCartId"/>
 			<item value="clearCart"/>
 			<item value="refreshCart"/>
-			<item value="refre"/>
 		</list>
 		<list key="replacehistory">
 		</list>

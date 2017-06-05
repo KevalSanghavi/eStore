@@ -5,7 +5,18 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-05-31T18:44:29Z</updated>
+  <updated>2017-06-05T10:06:24Z</updated>
+  <entry>
+    <title>Dependency Management Plugin 1.0.3.RELEASE</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/06/05/dependency-management-plugin-1-0-3-release" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2017-06-05:2937</id>
+    <updated>2017-06-05T10:06:24Z</updated>
+    <content type="html">&lt;p&gt;I am pleased to announce that &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin"&gt;Gradle dependency management plugin&lt;/a&gt; 1.0.3.RELEASE is now available from Maven Central, Bintray, and the &lt;a href="https://plugins.gradle.org/plugin/io.spring.dependency-management"&gt;Gradle Plugin Portal&lt;/a&gt;. This maintenance release fixes a &lt;a href="https://github.com/spring-gradle-plugins/dependency-management-plugin/milestone/23?closed=1"&gt;handful of issues&lt;/a&gt; and is a recommended upgrade for all users of the plugin.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Web Flow 2.4.5 released</title>
     <link rel="alternate" href="https://spring.io/blog/2017/05/31/spring-web-flow-2-4-5-released" />
@@ -1018,41 +1029,5 @@ WebFilter springSecurityFilterChain(ReactiveAuthenticationManager manager) {&#xD
   &lt;li&gt;Praneeth Ramesh did a &lt;a href="https://dzone.com/articles/cloud-foundry-for-developers"&gt;nice job introducing Cloud Foundry for developers&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;I liked this post by Michael Simons &lt;a href="http://info.michael-simons.eu/2017/04/30/digging-deep-into-spring-boots-starter/"&gt;digging into what makes a Spring Boot starter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring AMQP 2.0.0 Milestone 4 is Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/05/08/spring-amqp-2-0-0-milestone-4-is-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Gary Russell</name>
-    </author>
-    <id>tag:spring.io,2017-05-08:2918</id>
-    <updated>2017-05-08T18:41:11Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I am pleased to announce that the fourth milestone of Spring AMQP 2.0 &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=15926"&gt;2.0.0.M4&lt;/a&gt; is now available in the &lt;a href="https://repo.spring.io/milestone/"&gt;Spring milestone repository&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Features since &lt;a href="https://spring.io/blog/2017/04/04/spring-amqp-2-0-0-milestone-3-is-available"&gt;the last milestone&lt;/a&gt; include&amp;#8230;&amp;#8203;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The new &lt;code&gt;DirectMessageListnerContainer&lt;/code&gt; now supports configuring the number of messages to process between acks.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;You can now specify container &lt;code&gt;concurrency&lt;/code&gt; on the &lt;code&gt;@RabbitListener&lt;/code&gt; annotation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The release candidate is expected to be released in early June with the GA shortly after the Spring Framework 5.0 GA release.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For a complete list of changes in 2.0, see &lt;a href="http://docs.spring.io/spring-amqp/docs/2.0.0.BUILD-SNAPSHOT/reference/html/_introduction.html#_changes_in_2_0_since_1_7"&gt;What&amp;#8217;s New in the reference manual&lt;/a&gt;; also see the release notes for &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=15711"&gt;2.0.0.M1&lt;/a&gt;, &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=15775"&gt;2.0.0.M2&lt;/a&gt;,  &lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=15861"&gt;2.0.0.M3&lt;/a&gt;, as well as
-&lt;a href="https://jira.spring.io/jira/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=15926"&gt;2.0.0.M4&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-amqp/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://jira.spring.io/browse/AMQP"&gt;JIRA&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-amqp/blob/master/CONTRIBUTING.adoc"&gt;Contributing&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-amqp"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-amqp"&gt;Chat&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

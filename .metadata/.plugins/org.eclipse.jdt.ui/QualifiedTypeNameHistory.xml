@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="javax.persistence.Transient"/>
@@ -23,8 +22,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="com.estore.dao.ProductDao"/>
-<fullyQualifiedTypeName name="com.estore.model.BillingAddress"/>
-<fullyQualifiedTypeName name="com.estore.model.ShippingAddress"/>
 <fullyQualifiedTypeName name="com.estore.model.Users"/>
 <fullyQualifiedTypeName name="com.estore.model.Authorities"/>
 <fullyQualifiedTypeName name="com.estore.dao.CustomerDao"/>
@@ -32,13 +29,19 @@
 <fullyQualifiedTypeName name="org.springframework.security.web.bind.annotation.AuthenticationPrincipal"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
 <fullyQualifiedTypeName name="com.estore.dao.CartDao"/>
-<fullyQualifiedTypeName name="com.estore.service.CartService"/>
-<fullyQualifiedTypeName name="com.estore.service.CustomerService"/>
-<fullyQualifiedTypeName name="com.estore.service.ProductService"/>
-<fullyQualifiedTypeName name="com.estore.model.Customer"/>
-<fullyQualifiedTypeName name="com.estore.model.Product"/>
-<fullyQualifiedTypeName name="com.estore.model.CartItem"/>
-<fullyQualifiedTypeName name="com.estore.model.Cart"/>
 <fullyQualifiedTypeName name="com.estore.service.CartItemService"/>
 <fullyQualifiedTypeName name="com.estore.dao.CartItemDao"/>
+<fullyQualifiedTypeName name="com.estore.service.CartService"/>
+<fullyQualifiedTypeName name="com.estore.model.CartItem"/>
+<fullyQualifiedTypeName name="com.estore.model.Cart"/>
+<fullyQualifiedTypeName name="com.estore.model.CustomerOrder"/>
+<fullyQualifiedTypeName name="com.estore.dao.CustomerOrderDao"/>
+<fullyQualifiedTypeName name="com.estore.service.CustomerOrderService"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.estore.service.ProductService"/>
+<fullyQualifiedTypeName name="com.estore.model.Product"/>
+<fullyQualifiedTypeName name="com.estore.service.CustomerService"/>
+<fullyQualifiedTypeName name="com.estore.model.Customer"/>
+<fullyQualifiedTypeName name="com.estore.model.BillingAddress"/>
+<fullyQualifiedTypeName name="com.estore.model.ShippingAddress"/>
 </qualifiedTypeNameHistroy>

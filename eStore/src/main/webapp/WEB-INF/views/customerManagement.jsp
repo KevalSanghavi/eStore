@@ -6,9 +6,9 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Customer Management Page</h1>
+            <h2>Customer Management</h2>
 
-            <p class="lead">This is the customer management page.</p>
+            <p class="lead">View all customer information.</p>
         </div>
 
         <table class="table table-striped table-hover">
@@ -34,3 +34,6 @@
         </table>
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
+		
+	</div>
+</div>

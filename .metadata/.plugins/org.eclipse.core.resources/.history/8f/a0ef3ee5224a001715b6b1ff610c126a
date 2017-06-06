@@ -1,0 +1,18 @@
+<%@include file="/WEB-INF/views/template/header.jsp" %>
+
+<div class="container-wrapper">
+    <div class="container">
+        <div class=""page-header>
+            <h1>About Us</h1>
+            
+            <img src="<c:url value="/resources/images/showroom.jpg" />" alt="showroom" >
+            
+            <h4>eStore</h4>
+            <p>We are dedicated to provide best online shopping experience. We guarantee your total satisfaction!</p>
+                        
+        </div>
+
+        
+
+
+<%@include file="/WEB-INF/views/template/footer.jsp" %>

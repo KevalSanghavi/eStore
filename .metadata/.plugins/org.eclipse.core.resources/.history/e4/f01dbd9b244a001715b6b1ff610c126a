@@ -1,0 +1,18 @@
+<%@include file="/WEB-INF/views/template/header.jsp" %>
+
+
+
+<div class="container-wrapper">
+    <div class="container">
+        <div class=""page-header>
+            <h1>About Us</h1>
+            
+	        <p>
+				<img src="<c:url value="/resources/images/OnlineShopping1.jpg" />" alt="Online Shopping" style="float:left;">
+				We are dedicated to provide best online shopping experience. We guarantee your total satisfaction! 
+			</p>
+
+        </div>
+
+
+<%@include file="/WEB-INF/views/template/footer.jsp" %>

@@ -6,9 +6,9 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Add Product</h1>
+            <h2>Add Product</h2>
 
-            <p class="lead">Fill the below information to add a product:</p>
+            <p class="lead">Add a new product in the inventory.</p>
         </div>
 
         <form:form action="${pageContext.request.contextPath}/admin/product/addProduct" method="post"
@@ -18,7 +18,7 @@
             <form:input path="productName" id="name" class="form-Control"/>
         </div>
 
-        <div class="form-group">
+        <%-- <div class="form-group">
             <label for="category">Category</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
                                                              value="instrument" />Instrument</label>
@@ -26,6 +26,11 @@
                                                              value="record" />Record</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
                                                              value="accessory" />Accessory</label>
+        </div> --%>
+        
+        <div class="form-group">
+            <label for="category">Category</label>
+            <form:input path="productCategory" id="category" class="form-Control"/>
         </div>
 
         <div class="form-group">
@@ -71,9 +76,12 @@
         </div>
 
         <br><br>
-        <input type="submit" value="submit" class="btn btn-default">
+        <input type="submit" value="Submit" class="btn btn-default">
         <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
         </form:form>
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
+		
+	</div>
+</div>

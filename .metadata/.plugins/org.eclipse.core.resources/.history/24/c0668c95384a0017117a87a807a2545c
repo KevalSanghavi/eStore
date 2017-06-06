@@ -1,0 +1,20 @@
+<%@include file="/WEB-INF/views/template/header.jsp" %>
+
+
+<img class="home-image" src="<c:url value="/resources/images/OnlineShopping2.jpg" />" alt="Online Shopping" 
+	height="100%"  width="100%" >
+
+<div class="container">
+
+    <!-- <div class="carousel-caption">
+        <h1><font color="white">Welcome to the eStore!</font></h1>
+    </div> -->
+    
+     <div class="carousel-caption">
+        <h1><font color="white">Welcome to the eStore!</font></h1>
+    </div>
+    
+</div>
+
+
+<%@include file="/WEB-INF/views/template/footer.jsp" %>

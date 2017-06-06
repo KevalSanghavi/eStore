@@ -5,23 +5,23 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Customer</h1>
+            <h2>Checkout process</h2>
 
-            <p class="lead">Customer Details</p>
+            <p class="lead">Please verify the details.</p>
         </div>
 
         <form:form commandName="order" class="form-horizaontal">
 
-        <h3>Shipping Address</h3>
-
-        <div class="form-group">
-            <label for="shippingStreet">Street Name</label>
-            <form:input path="cart.customer.shippingAddress.streetName" id="shippingStreet" class="form-Control"/>
-        </div>
-
+        <h4>Shipping Address</h4>
+        
         <div class="form-group">
             <label for="shippingApartmentNumber">Apartment Number</label>
             <form:input path="cart.customer.shippingAddress.apartmentNumber" id="shippingApartmentNumber" class="form-Control"/>
+        </div>
+        
+        <div class="form-group">
+            <label for="shippingStreet">Street Name</label>
+            <form:input path="cart.customer.shippingAddress.streetName" id="shippingStreet" class="form-Control"/>
         </div>
 
         <div class="form-group">
@@ -54,3 +54,6 @@
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
+	
+	</div>
+</div>

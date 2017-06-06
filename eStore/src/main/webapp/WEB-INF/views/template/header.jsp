@@ -60,11 +60,14 @@
 								class="icon-bar"></span> <span class="icon-bar"></span> <span
 								class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="<c:url value="/" /> ">eStore</a>
+						<%-- <a class="navbar-brand" href="<c:url value="/" /> ">
+							<span class="glyphicon glyphicon-shopping-cart"></span>
+						</a> --%>
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="<c:url value="/" /> ">Home</a></li>
+							<li><a href="<c:url value="/" /> ">
+								<span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
 							<li><a href="<c:url value="/product/productList/all" />">Products</a></li>
 							<li><a href="<c:url value="/about" />">About Us</a></li>
 						</ul>
@@ -72,19 +75,24 @@
 							<c:if test="${pageContext.request.userPrincipal.name != null}">
 								<li><a>Welcome:
 										${pageContext.request.userPrincipal.name}</a></li>
-								<li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+								<li><a href="<c:url value="/j_spring_security_logout" />">
+									<span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
 								<c:if
 									test="${pageContext.request.userPrincipal.name != 'admin'}">
-									<li><a href="<c:url value="/customer/cart" />">Cart</a></li>
+									<li><a href="<c:url value="/customer/cart" />">
+										<span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; Cart</a></li>
 								</c:if>
 								<c:if
 									test="${pageContext.request.userPrincipal.name  == 'admin'}">
-									<li><a href="<c:url value="/admin" />">Admin</a></li>
+									<li><a href="<c:url value="/admin" />">
+										<span class="glyphicon glyphicon-user"></span>&nbsp; Admin</a></li>
 								</c:if>
 							</c:if>
 							<c:if test="${pageContext.request.userPrincipal.name  == null}">
-								<li><a href="<c:url value="/login/" />">Login</a></li>
-								<li><a href="<c:url value="/register" />">Register</a></li>
+								<li><a href="<c:url value="/login/" />">
+									<span class="glyphicon glyphicon-log-in"></span>&nbsp; Login</a></li>
+								<li><a href="<c:url value="/register" />">
+									<span class="glyphicon glyphicon-pencil"></span>&nbsp; Sign Up</a></li>
 							</c:if>
 						</ul>
 					</div>
@@ -93,3 +101,5 @@
 
 		</div>
 	</div>
+	
+	<br/><br/><br/>

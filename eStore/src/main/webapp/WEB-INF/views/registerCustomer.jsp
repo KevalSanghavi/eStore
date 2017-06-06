@@ -5,15 +5,15 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Register Customer</h1>
+            <h2>Customer Registration</h2>
 
-            <p class="lead">Please fill in your information below:</p>
+            <p class="lead">Please fill in your information below.</p>
         </div>
 
         <form:form action="${pageContext.request.contextPath}/register" method="post"
                    commandName="customer">
 
-        <h3>Basic Info</h3>
+        <h4>Basic Info</h4>
 
         <div class="form-group">
             <label for="name">Name</label><form:errors path="customerName" cssStyle="color: #ff0000"/>
@@ -43,16 +43,16 @@
         </div>
 
 
-        <h3>Billing Address</h3>
-
+        <h4>Billing Address</h4>
+        
+		<div class="form-group">
+            <label for="billingApartmentNumber">Apartment Number</label>
+            <form:input path="billingAddress.apartmentNumber" id="billingApartmentNumber" class="form-Control"/>
+        </div>
+        
         <div class="form-group">
             <label for="billingStreet">Street Name</label>
             <form:input path="billingAddress.streetName" id="billingStreet" class="form-Control"/>
-        </div>
-
-        <div class="form-group">
-            <label for="billingApartmentNumber">Apartment Number</label>
-            <form:input path="billingAddress.apartmentNumber" id="billingApartmentNumber" class="form-Control"/>
         </div>
 
         <div class="form-group">
@@ -76,16 +76,16 @@
         </div>
 
 
-        <h3>Shipping Address</h3>
-
-        <div class="form-group">
-            <label for="shippingStreet">Street Name</label>
-            <form:input path="shippingAddress.streetName" id="shippingStreet" class="form-Control"/>
-        </div>
-
+        <h4>Shipping Address</h4>
+        
         <div class="form-group">
             <label for="shippingApartmentNumber">Apartment Number</label>
             <form:input path="shippingAddress.apartmentNumber" id="shippingApartmentNumber" class="form-Control"/>
+        </div>
+        
+        <div class="form-group">
+            <label for="shippingStreet">Street Name</label>
+            <form:input path="shippingAddress.streetName" id="shippingStreet" class="form-Control"/>
         </div>
 
         <div class="form-group">
@@ -109,9 +109,12 @@
         </div>
 
         <br><br>
-        <input type="submit" value="submit" class="btn btn-default">
+        <input type="submit" value="Submit" class="btn btn-default">
         <a href="<c:url value="/" />" class="btn btn-default">Cancel</a>
         </form:form>
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
+		
+	</div>
+</div>

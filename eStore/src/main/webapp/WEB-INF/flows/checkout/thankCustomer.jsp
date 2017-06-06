@@ -4,13 +4,11 @@
 <div class="container-wrapper">
     <div class="container">
         <section>
-            <div class="jumbotron">
-                <div class="container">
-                    <h1>Thank you for your business!</h1>
+              <div class="container">
+                  <h2 class="alert alert-success">Thank you for your business!</h2>
 
-                    <p>Your order will be shipped in two business days!</p>
-                </div>
-            </div>
+                  <p class="lead">Your order will be shipped in three business days!</p>
+              </div>
         </section>
 
         <section class="container">
@@ -19,7 +17,7 @@
             </p>
         </section>
 
-    </div>
+	<%@include file="/WEB-INF/views/template/footer.jsp" %>	
+		
+	</div>
 </div>
-
-<%@include file="/WEB-INF/views/template/footer.jsp" %>

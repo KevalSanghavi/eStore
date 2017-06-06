@@ -1,18 +1,13 @@
 <!-- FOOTER -->
 <footer>
-	<p class="pull-right">
-		<a href="#">Back to top</a>
-	</p>
-
+	<hr>
 	<p>
-		&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a
-			href="#">Terms</a>
+		Copyright &copy; 2017 Keval Sanghavi
 	</p>
+	<!-- <p class="pull-right">
+		By Keval Sanghavi &nbsp; &nbsp;
+	</p> -->
 </footer>
-</div>
-
-</div>
-<!-- /.container -->
 
 
 <!-- Bootstrap core JavaScript

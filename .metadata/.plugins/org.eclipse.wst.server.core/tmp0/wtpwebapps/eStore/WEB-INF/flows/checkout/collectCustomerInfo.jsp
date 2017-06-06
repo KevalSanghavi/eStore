@@ -5,14 +5,14 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Customer</h1>
+            <h2>Checkout process</h2>
 
-            <p class="lead">Customer Details</p>
+            <p class="lead">Please verify the details.</p>
         </div>
 
         <form:form commandName="order" class="form-horizaontal">
 
-        <h3>Basic Info</h3>
+        <h4>Basic Info</h4>
 
         <div class="form-group">
             <label for="name">Name</label>
@@ -29,16 +29,17 @@
             <form:input path="cart.customer.customerPhone" id="phone" class="form-Control"/>
         </div>
 
-        <h3>Billing Address</h3>
 
-        <div class="form-group">
-            <label for="billingStreet">Street Name</label>
-            <form:input path="cart.customer.billingAddress.streetName" id="billingStreet" class="form-Control"/>
-        </div>
-
+        <h4>Billing Address</h4>
+        
         <div class="form-group">
             <label for="billingApartmentNumber">Apartment Number</label>
             <form:input path="cart.customer.billingAddress.apartmentNumber" id="billingApartmentNumber" class="form-Control"/>
+        </div>
+        
+        <div class="form-group">
+            <label for="billingStreet">Street Name</label>
+            <form:input path="cart.customer.billingAddress.streetName" id="billingStreet" class="form-Control"/>
         </div>
 
         <div class="form-group">
@@ -70,3 +71,6 @@
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
+	
+	</div>
+</div>

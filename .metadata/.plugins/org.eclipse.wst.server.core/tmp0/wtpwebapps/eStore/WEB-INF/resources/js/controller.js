@@ -18,6 +18,10 @@ cartApp.controller("cartCtrl", function ($scope, $http){
 		$scope.refreshCart(cartId);
 	};
 
+	$scope.addToCartCallWithoutLoggedIn = function () {
+		alert("Please login first and then try again.")
+	};
+
 	$scope.addToCart = function (productId) {
 		$http.put('/eStore/rest/cart/add/'+productId).success(function () {
 			alert("Product successfully added to the cart!")

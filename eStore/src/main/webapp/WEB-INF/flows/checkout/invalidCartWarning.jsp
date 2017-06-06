@@ -4,20 +4,19 @@
 <div class="container-wrapper">
     <div class="container">
         <section>
-            <div class="jumbotron">
-                <div class="container">
-                    <h1>Invalid Cart</h1>
-                </div>
-            </div>
+              <div class="page-header">
+                 <h2 class="alert alert-danger">Invalid Cart</h2>
+             </div>
         </section>
 
         <section class="container">
             <p>
-                <a href="<spring:url value="/product/productList" />" class="btn btn-default">products</a>
+                <a href="<spring:url value="/product/productList/all" />" class="btn btn-default">Continue Shopping</a>
             </p>
         </section>
+        
 
-    </div>
+	<%@include file="/WEB-INF/views/template/footer.jsp" %>
+		
+	</div>
 </div>
-
-<%@include file="/WEB-INF/views/template/footer.jsp" %>

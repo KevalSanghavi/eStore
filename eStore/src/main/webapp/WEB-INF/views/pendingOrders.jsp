@@ -29,7 +29,7 @@
 					<th>Customer</th>
 					<th>Billing Address</th>
 					<th>Shipping Address</th>
-					<th>Set as Fulfilled</th>
+					<th>Action</th>
 				</tr>
 			</thead>
 			<c:forEach items="${allPendingOrdersList}" var="pendingOrders">
@@ -42,7 +42,7 @@
 					<td>${pendingOrders.shippingAddress.toString()}</td>
 					<td><a href="<spring:url value="/admin/pendingOrders/setFulfilled/${pendingOrders.confirmedOrderId}" />" 
 						class="label label-success">
-						<span class="glyphicon glyphicon-ok"></span>&nbsp; Fulfilled</a> </td>
+						<span class="glyphicon glyphicon-ok"></span>&nbsp; Set as Fulfilled</a> </td>
 				</tr>
 			</c:forEach>
 		</table>

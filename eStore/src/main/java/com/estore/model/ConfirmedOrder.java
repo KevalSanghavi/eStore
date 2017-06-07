@@ -6,7 +6,6 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -14,6 +13,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 @Entity
 public class ConfirmedOrder implements Serializable {
@@ -36,7 +38,8 @@ public class ConfirmedOrder implements Serializable {
 	@JoinColumn(name = "shippingAddressId")
 	private ShippingAddress shippingAddress;
 
-	@OneToMany(mappedBy = "confirmedOrder", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "confirmedOrder", cascade = CascadeType.ALL)
+	@LazyCollection(LazyCollectionOption.FALSE)
 	private List<ConfirmedOrderItem> orderItems;
 
 	private double grandTotal;

@@ -13,6 +13,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 import javax.validation.constraints.Min;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -47,6 +49,11 @@ public class Product implements Serializable {
 	@OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JsonIgnore
 	private List<CartItem> cartItemList;
+
+	@OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+	@LazyCollection(LazyCollectionOption.FALSE)
+	@JsonIgnore
+	private List<ConfirmedOrderItem> confirmedOrderItemList;
 
 	public int getProductId() {
 		return productId;
@@ -134,6 +141,14 @@ public class Product implements Serializable {
 
 	public void setCartItemList(List<CartItem> cartItemList) {
 		this.cartItemList = cartItemList;
+	}
+
+	public List<ConfirmedOrderItem> getConfirmedOrderItemList() {
+		return confirmedOrderItemList;
+	}
+
+	public void setConfirmedOrderItemList(List<ConfirmedOrderItem> confirmedOrderItemList) {
+		this.confirmedOrderItemList = confirmedOrderItemList;
 	}
 
 	@Override

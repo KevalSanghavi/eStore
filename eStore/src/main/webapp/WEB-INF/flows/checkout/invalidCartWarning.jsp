@@ -6,6 +6,8 @@
         <section>
               <div class="page-header">
                  <h2 class="alert alert-danger">Invalid Cart</h2>
+                 
+                 <p class="lead">Your cart is invalid.</p>
              </div>
         </section>
 

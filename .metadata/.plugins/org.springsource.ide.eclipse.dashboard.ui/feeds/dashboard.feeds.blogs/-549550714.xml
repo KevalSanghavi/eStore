@@ -5,7 +5,88 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-06-06T12:01:08Z</updated>
+  <updated>2017-06-07T15:49:57Z</updated>
+  <entry>
+    <title>Spring Cloud Pipelines 1.0.0.M5 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/06/07/spring-cloud-pipelines-1-0-0-m5-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Marcin Grzejszczak</name>
+    </author>
+    <id>tag:spring.io,2017-06-07:2939</id>
+    <updated>2017-06-07T15:49:57Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the Spring Cloud team it is my pleasure to announce a new milestone release of Spring Cloud Pipelines - &lt;code&gt;1.0.0.M5&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="what-s-new"&gt;&lt;a class="anchor" href="#what-s-new"&gt;&lt;/a&gt;What&amp;#8217;s new?&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;With &lt;a href="https://github.com/spring-cloud/spring-cloud-pipelines/milestone/4?closed=1"&gt;&lt;code&gt;1.0.0.M5&lt;/code&gt;&lt;/a&gt; we&amp;#8217;ve added a new step in the &lt;code&gt;Build&lt;/code&gt; stage called &lt;code&gt;API Compatibility check&lt;/code&gt;. Now, your pipeline
+can break when, as a HTTP / messaging producer, you&amp;#8217;re doing a backward incompatible change. We&amp;#8217;re checking what were the latest contracts you&amp;#8217;ve defined for your most recent production
+ deployment and from those contracts we&amp;#8217;re generating tests to your current application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock"&gt;
+&lt;div class="content"&gt;
+&lt;img src="http://cloud.spring.io/spring-cloud-pipelines/img/intro/build.png" alt="API Compatibility check"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can read more about this feature in &lt;a href="http://cloud.spring.io/spring-cloud-pipelines/spring-cloud-pipelines.html#_build"&gt;Spring Cloud Pipelines Docs&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Also, the one and only Ryan Baxter, has added support for GPG keys in Jenkins.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="feedback-needed"&gt;&lt;a class="anchor" href="#feedback-needed"&gt;&lt;/a&gt;Feedback needed&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you&amp;#8217;re already using Spring Cloud Pipelines please comment under &lt;a href="https://github.com/spring-cloud/spring-cloud-pipelines/issues/55"&gt;this issue&lt;/a&gt; with steps you
+needed to take to customize the project to suit your company&amp;#8217;s needs. Without your feedback I won&amp;#8217;t be able to automate the customization process!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="webinar"&gt;&lt;a class="anchor" href="#webinar"&gt;&lt;/a&gt;Webinar&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If you&amp;#8217;re interested in more information about the project please check out the  &lt;a href="https://content.pivotal.io/webinars/continuous-deployment-to-the-cloud"&gt;Spring Cloud Pipelines webinar&lt;/a&gt; that was recorded recently.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="links"&gt;&lt;a class="anchor" href="#links"&gt;&lt;/a&gt;Links&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Please check out any of these links for more information or to contact us:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://cloud.spring.io/spring-cloud-pipelines/"&gt;Project page&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://cloud.spring.io/spring-cloud-pipelines/spring-cloud-pipelines.html"&gt;Project documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://cloud.spring.io/spring-cloud-pipelines/spring-cloud-pipelines.html#concourse"&gt;Concourse opinionated pipeline setup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://concourse.ci"&gt;Concourse Website&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://cloud.spring.io/spring-cloud-pipelines/spring-cloud-pipelines.html#jenkins"&gt;Jenkins opinionated pipeline setup&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://gitter.im/spring-cloud/spring-cloud-pipelines"&gt;Spring Cloud Pipelines Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - June 6th, 2017</title>
     <link rel="alternate" href="https://spring.io/blog/2017/06/06/this-week-in-spring-june-6th-2017" />
@@ -1000,36 +1081,5 @@ WebFilter springSecurityFilterChain(ReactiveAuthenticationManager manager) {&#xD
 &lt;p&gt;To learn more, view the course datasheet, and register in an upcoming class, visit our &lt;a href="https://pivotal.io/training/courses/spring-cloud-services-training"&gt;Spring Cloud Services&lt;/a&gt; page.&lt;/p&gt;&lt;h1&gt;&lt;a href="#more-information" class="anchor" name="more-information"&gt;&lt;/a&gt;More Information&lt;/h1&gt;
 &lt;p&gt;Pivotal Training has made an array of exciting changes to align our curriculum with the latest Spring features. We have also made it easier to earn an industry-recognize Spring Certification by making Spring Exams available for individual purchase. &lt;/p&gt;
 &lt;p&gt;Learn more about our Spring offerings by visiting &lt;a href="http://pivotal.io/training"&gt;http://pivotal.io/training&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Data Release Train Kay M3 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/05/09/spring-data-release-train-kay-m3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Paluch</name>
-    </author>
-    <id>tag:spring.io,2017-05-09:2920</id>
-    <updated>2017-05-09T10:32:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the Spring Data team, I’d like to announce the availability of the third milestone of the release train Kay. &lt;/p&gt;
-&lt;p&gt;The most significant change is an improved naming scheme for &lt;a href="https://github.com/spring-projects/spring-data-commons/commit/727ab8384cac21e574526f325e19d6af92b8c8df"&gt;&lt;code&gt;CrudRepository&lt;/code&gt;&lt;/a&gt;. We extracted the store-specific &lt;code&gt;CustomConversions&lt;/code&gt; to Spring Data Commons and introduced bi-directional type-based converters to maintain a single API for common conversion code. You can now define converters using lambdas. You need to adopt your code to the renamed methods. MongoDB ships with a renamed annotation for reactive tailable cursors, we renamed &lt;code&gt;@InfiniteStream&lt;/code&gt; to &lt;code&gt;@Tailable.&lt;/code&gt; Users of Spring Data for Apache Cassandra can now upgrade to a higher Guava version as we upgraded to Datastax driver 3.2.0.&lt;/p&gt;
-&lt;p&gt;With this release, we ship over &lt;a href="https://jira.spring.io/issues/?filter=15537"&gt;100 tickets&lt;/a&gt; fixed. A high-level overview of what has been changed can be found in our &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Kay"&gt;release wiki&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;We’re looking forward to your feedback!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Data Commons 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-commons/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data JPA 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-jpa/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data KeyValue 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-keyvalue/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/keyvalue/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Cassandra 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-cassandra/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data for Apache Solr 3.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-solr/3.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/3.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/3.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/3.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Gemfire 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-gemfire/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Neo4j 5.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-neo4j/5.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/5.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data MongoDB 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-mongodb/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data LDAP 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-ldap/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/ldap/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Envers 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-envers/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/envers/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data REST 3.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-rest-webmvc/3.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/3.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Redis 2.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-redis/2.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/2.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Elasticsearch 3.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-elasticsearch/3.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/3.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Data Couchbase 3.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-couchbase/3.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Should you happen to be at &lt;a href="https://jax.de/programm/#day3"&gt;JAX Conference 2017&lt;/a&gt;, visit us there and get a broader overview on &lt;a href="https://jax.de/session/sneak-peek-on-spring-data-kay/"&gt;Spring Data Kay on Wednesday&lt;/a&gt;.&lt;/p&gt;</content>
   </entry>
 </feed>

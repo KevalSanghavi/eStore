@@ -50,6 +50,11 @@ public class Customer implements Serializable {
 	@JsonIgnore
 	private Cart cart;
 
+	@OneToOne
+	@JoinColumn(name = "confirmedOrderId")
+	@JsonIgnore
+	private ConfirmedOrder confirmedOrder;
+
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -128,6 +133,14 @@ public class Customer implements Serializable {
 
 	public void setCart(Cart cart) {
 		this.cart = cart;
+	}
+
+	public ConfirmedOrder getConfirmedOrder() {
+		return confirmedOrder;
+	}
+
+	public void setConfirmedOrder(ConfirmedOrder confirmedOrder) {
+		this.confirmedOrder = confirmedOrder;
 	}
 
 	@Override

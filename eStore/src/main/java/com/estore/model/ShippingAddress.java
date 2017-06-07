@@ -26,6 +26,9 @@ public class ShippingAddress implements Serializable {
 	@OneToOne
 	private Customer customer;
 
+	@OneToOne
+	private ConfirmedOrder confirmedOrder;
+
 	public int getShippingAddressId() {
 		return shippingAddressId;
 	}
@@ -88,6 +91,14 @@ public class ShippingAddress implements Serializable {
 
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
+	}
+
+	public ConfirmedOrder getConfirmedOrder() {
+		return confirmedOrder;
+	}
+
+	public void setConfirmedOrder(ConfirmedOrder confirmedOrder) {
+		this.confirmedOrder = confirmedOrder;
 	}
 
 	@Override

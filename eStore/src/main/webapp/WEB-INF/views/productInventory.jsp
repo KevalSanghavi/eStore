@@ -19,7 +19,12 @@
 
 			<p class="lead">View and modify the product inventory.</p>
 		</div>
-
+		
+		<a href="<spring:url value="/admin/product/addProduct" />"
+			class="btn btn-primary">Add Product</a>
+		
+		<br/><br/><br/>
+		
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr class="bg-success">
@@ -51,10 +56,6 @@
 			</c:forEach>
 		</table>
 		
-		<br/>
-		
-		<a href="<spring:url value="/admin/product/addProduct" />"
-			class="btn btn-primary">Add Product</a>
 
 		<%@include file="/WEB-INF/views/template/footer.jsp"%>
 		

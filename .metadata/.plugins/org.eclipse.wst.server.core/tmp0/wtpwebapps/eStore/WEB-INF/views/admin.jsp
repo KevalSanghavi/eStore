@@ -4,7 +4,7 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h2>Administrator page</h2>
+            <h2>Administrator Page</h2>
 
             <p class="lead">Administrator options.</p>
         </div>

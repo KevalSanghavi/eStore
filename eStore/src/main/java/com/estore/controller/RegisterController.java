@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -63,6 +64,12 @@ public class RegisterController {
 		}
 
 		customer.setEnabled(true);
+		
+		// Set encrypted password.
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		String hashedPassword = passwordEncoder.encode(customer.getPassword());
+		customer.setPassword(hashedPassword);
+		
 		customerService.addCustomer(customer);
 
 		return "registerCustomerSuccess";

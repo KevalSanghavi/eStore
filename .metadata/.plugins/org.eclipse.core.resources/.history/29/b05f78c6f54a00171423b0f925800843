@@ -1,0 +1,54 @@
+package com.estore.model;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+public class ConfirmedOrder implements Serializable {
+
+	private static final long serialVersionUID = 614616326064523743L;
+
+	@Id
+	@GeneratedValue
+	private int confirmedOrderId;
+
+	@OneToOne
+	@JoinColumn(name = "customerId")
+	private Customer customer;
+
+	@OneToOne
+	@JoinColumn(name = "billingAddressId")
+	private BillingAddress billingAddress;
+
+	@OneToOne
+	@JoinColumn(name = "shippingAddressId")
+	private ShippingAddress shippingAddress;
+
+	@OneToMany(mappedBy = "confirmedOrder", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<OrderItem> orderItems;
+
+	private double grandTotal;
+
+	@Temporal(TemporalType.DATE)
+	private Date orderDate;
+
+	private boolean isFulfilled;
+
+	@Temporal(TemporalType.DATE)
+	private Date fulfillmentDate;
+
+	
+
+}

@@ -5,7 +5,34 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-06-05T10:06:24Z</updated>
+  <updated>2017-06-06T12:01:08Z</updated>
+  <entry>
+    <title>This Week in Spring - June 6th, 2017</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/06/06/this-week-in-spring-june-6th-2017" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2017-06-06:2938</id>
+    <updated>2017-06-06T12:01:08Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m in Malaysia and then Singapore where I&amp;rsquo;ll spend time with customers in the financial services world and speak at the &lt;a href="https://www.meetup.com/singasug/"&gt;Singapore Spring User Group&lt;/a&gt; on June 8th. If you&amp;rsquo;re around, come out or &lt;a href="http://twitter.com/starbuxman"&gt;say hi&lt;/a&gt;!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring IO Platform lead and Spring Boot ninja Andy Wilkinson just announced the &lt;a href="http://spring.io/blog/2017/06/05/dependency-management-plugin-1-0-3-release"&gt;Gradle Dependency management plugin 1.0.3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring web guru has just &lt;a href="http://spring.io/blog/2017/05/31/spring-web-flow-2-4-5-released"&gt;announced Spring Web Flow 2.4.5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;the Baeldung blog has a nice look &lt;a href="http://www.baeldung.com/spring-boot-kotlin"&gt;at Spring Boot and Kotlin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ranga Karanam put together a nice look at building &lt;a href="https://dzone.com/articles/creating-a-web-application-with-spring-boot"&gt;web applications with Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I liked this blog offering tips and tricks for using the compile-time annotation &lt;a href="https://dzone.com/articles/5-tips-for-using-lombok-in-production"&gt;processor Lombok in production application&lt;/a&gt;. Lombok is not a Spring project, obviously, but it&amp;rsquo;s easy to use with Spring and it&amp;rsquo;s available on the Spring Initializr [as a dependency].&lt;/li&gt;
+  &lt;li&gt;I reallly enjoyed some of the replies in the Quora post &lt;a href="https://www.quora.com/NoSQL-When-would-you-choose-CouchBase-vs-MongoDB-vs-Redis"&gt;&lt;em&gt;When would you choose Couchbase vs MongoDB vs Redis&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cloud Foundry is dropping Consul from its internal implementation. This design doc / post-mortem looks at why, in this particular case, &lt;a href="https://docs.google.com/document/d/1qdLNIWQQzluXw5rnc39raAYOnnSdDUjhUOrovUE0NJI/edit#heading=h.f54rg2dpu35y"&gt;it makes sense for Cloud Founddry to move Consul out of the stack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Baeldung blog also updated their &lt;a href="http://www.baeldung.com/java-9-reactive-streams"&gt;Java 9 Reactive Streams content, which is as-always a worthy read&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I liked this talk by Martin Fowler &lt;a href="https://www.youtube.com/watch?v=STKCRSUsyP0"&gt;on the different uses of messaging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pivotal&amp;rsquo;s very own Matt Stine put together a nice read, &lt;a href="https://builttoadapt.io/whats-your-decomposition-strategy-e19b8e72ac8f"&gt;&lt;em&gt;What&amp;rsquo;s your Decomposition Strategy?&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;interesting analysis from Bob Evans at Forbes: &lt;a href="https://www.forbes.com/sites/bobevans1/2017/06/01/sorry-amazon-but-microsoft-is-the-worlds-1-cloud-vendor-heres-why-cloud-wars/#1a83af887928"&gt;&lt;em&gt;Sorry Amazon, but Microsoft is the World&amp;rsquo;s #1 Cloud Vendor&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I loved &lt;a href="https://builttoadapt.io/how-to-train-your-microservices-ef2d912109d9"&gt;this Dreamworks case-study&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Coda Hale (who, among &lt;em&gt;many&lt;/em&gt; things, created the DropWizard Metrics library) put together a great &lt;a href="https://codahale.com/usl4j-and-you/"&gt;read introducing Little&amp;rsquo;s Law&lt;/a&gt; - an approach to modeling system performance - and his new library, &lt;a href="https://github.com/codahale/usl4j"&gt;usl4j&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Pivotal&amp;rsquo;s own Joshua McKenty put together a nice piece on how &lt;a href="https://builttoadapt.io/diversify-your-cloud-portfolio-or-bank-on-failure-dabaead526a1"&gt;to diversify a cloud portfolio&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Dependency Management Plugin 1.0.3.RELEASE</title>
     <link rel="alternate" href="https://spring.io/blog/2017/06/05/dependency-management-plugin-1-0-3-release" />
@@ -1004,30 +1031,5 @@ WebFilter springSecurityFilterChain(ReactiveAuthenticationManager manager) {&#xD
   &lt;li&gt;Spring Data Couchbase 3.0 M3 - &lt;a href="https://repo.spring.io/libs-milestone/org/springframework/data/spring-data-couchbase/3.0.0.M3"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.0.M3/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.0.M3/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/3.0.0.M3/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Should you happen to be at &lt;a href="https://jax.de/programm/#day3"&gt;JAX Conference 2017&lt;/a&gt;, visit us there and get a broader overview on &lt;a href="https://jax.de/session/sneak-peek-on-spring-data-kay/"&gt;Spring Data Kay on Wednesday&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - May 8th, 2017</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/05/09/this-week-in-spring-may-8th-2017" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2017-05-09:2919</id>
-    <updated>2017-05-09T03:44:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! This week I&amp;rsquo;m in Austin, Texas for &lt;a href="https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/speaker/171564"&gt;OSCON&lt;/a&gt;; London, UK, for &lt;a href="http://cfp.devoxx.co.uk/2017/talk/YDG-0684/Reactive_Spring"&gt;Devoxx UK&lt;/a&gt;; and Nice, France for &lt;a href="http://rivieradev.fr/orateur/152"&gt;RivieraDev&lt;/a&gt;! If you&amp;rsquo;re around, I&amp;rsquo;d love to talk to you so don&amp;rsquo;t hesitate to say hi!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2017/05/08/spring-framework-5-0-goes-rc1"&gt;Spring Framework 5 RC1 is now available!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;InfoQ has a nice post on the new &lt;a href="https://www.infoq.com/news/2017/05/spring-vault-ga"&gt;Spring Vault release&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration lead Gary Russell &lt;a href="https://spring.io/blog/2017/05/08/spring-amqp-2-0-0-milestone-4-is-available"&gt;just announced Spring AMQP 2.0M4 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Cloud ninja Ryan Baxter &lt;a href="https://spring.io/blog/2017/05/08/spring-cloud-camden-sr7-released"&gt;just announced Spring Cloud Camden SR7 has been released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this short-but-sweet look at the Pivotal Cloud Cache on Pivotal Cloud Foundry, &lt;a href="http://theblasfrompas.blogspot.com/2017/04/spring-boot-application-for-pivotal.html"&gt;in terms of a Spring Boot application&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Periodic reminder: &lt;a href="https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html"&gt;Spring Cloud Contract&lt;/a&gt; helps you solve the problem of integration testing distributed systems- don&amp;rsquo;t sleep on this!&lt;/li&gt;
-  &lt;li&gt;Spring ninja Stéphane Nicoll? &lt;a href="https://twitter.com/snicoll/status/860149206186692611"&gt;announced that there is now a starter for Reactive Redis support&lt;/a&gt; on the Spring Initializr&lt;/li&gt;
-  &lt;li&gt;I really enjoyed this discussion of the benefits of self-contained services (as compared to microservices) &lt;a href="https://www.infoq.com/articles/scs-microservices-done-right"&gt;on InfoQ&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Kamala Dasika has put together a nice look &lt;a href="https://content.pivotal.io/blog/cloud-native-security-going-upstack-from-the-3-rs"&gt;going upstack when applying the 3 Rs of security&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;the &lt;a href="http://cloud.spring.io/spring-cloud-dataflow/"&gt;new Spring Cloud Data Flow page has a very convenient getting-started experience&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Praneeth Ramesh did a &lt;a href="https://dzone.com/articles/cloud-foundry-for-developers"&gt;nice job introducing Cloud Foundry for developers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this post by Michael Simons &lt;a href="http://info.michael-simons.eu/2017/04/30/digging-deep-into-spring-boots-starter/"&gt;digging into what makes a Spring Boot starter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

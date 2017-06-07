@@ -1,0 +1,9 @@
+package com.estore.dao;
+
+import com.estore.model.CustomerOrder;
+
+public interface ConfirmedOrderDao {
+
+	void populateAndSaveOrder(CustomerOrder customerOrder);
+
+}

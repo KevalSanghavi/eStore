@@ -1,0 +1,5 @@
+package com.estore.controller.admin;
+
+public class AdminConfirmedOrders {
+
+}

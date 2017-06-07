@@ -7,7 +7,7 @@
 			function() {
 				$('.table').DataTable({
 					"lengthMenu" : [ [ 1, 2, 3, 5, 10, -1 ], [ 1, 2, 3, 5, 10, "All" ] ],
-					"iDisplayLength": 10
+					"iDisplayLength": 5
 				});
 			});
 </script>

@@ -92,8 +92,7 @@ public class ShippingAddress implements Serializable {
 
 	@Override
 	public String toString() {
-		return "ShippingAddress{" + "streetName='" + streetName + '\'' + ", apartmentNumber='" + apartmentNumber + '\''
-				+ ", city='" + city + '\'' + ", state='" + state + '\'' + ", country='" + country + '\'' + ", zipCode='"
-				+ zipCode + '\'' + '}';
+		return apartmentNumber + ", " + streetName + ", " + city + ", " + state + ", " + country + ", " + zipCode;
 	}
+
 }

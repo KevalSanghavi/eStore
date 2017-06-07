@@ -1,0 +1,10 @@
+package com.estore.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.estore.service.ConfirmedOrderService;
+
+@Service
+public class ConfirmedOrderServiceImpl implements ConfirmedOrderService {
+
+}

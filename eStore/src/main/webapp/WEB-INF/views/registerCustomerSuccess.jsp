@@ -15,7 +15,8 @@
 
         <section class="container">
             <p>
-                <a href="<spring:url value="/product/productList/all" />" class="btn btn-default">Continue Shopping</a>
+                <a href="<spring:url value="/login" />" class="btn btn-default">
+                	<span class="glyphicon glyphicon-log-in"></span>&nbsp; Log In</a>
             </p>
         </section>
 		

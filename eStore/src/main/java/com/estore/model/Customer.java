@@ -129,4 +129,10 @@ public class Customer implements Serializable {
 	public void setCart(Cart cart) {
 		this.cart = cart;
 	}
+
+	@Override
+	public String toString() {
+		return customerName + ". Email: " + customerEmail + ". Phone: " + customerPhone;
+	}
+
 }

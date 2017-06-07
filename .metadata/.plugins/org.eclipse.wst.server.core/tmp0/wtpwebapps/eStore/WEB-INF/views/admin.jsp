@@ -23,7 +23,23 @@
         <p>View and modify the product inventory.</p>
 
         <br>
+        
+        <h3>
+            <a href="<c:url value="/admin/pendingOrders" />" >Pending Orders</a>
+        </h3>
 
+        <p>View and fulfill all pending orders.</p>
+
+        <br>
+        
+        <h3>
+            <a href="<c:url value="/admin/allOrders" />" >All Orders</a>
+        </h3>
+
+        <p>View all orders.</p>
+
+        <br>
+        
         <h3>
             <a href="<c:url value="/admin/customer" />" >Customer Management</a>
         </h3>

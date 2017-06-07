@@ -1,0 +1,9 @@
+package com.estore.dao;
+
+import com.estore.model.Order;
+
+public interface OrderDao {
+
+	void saveOrder(Order order);
+
+}

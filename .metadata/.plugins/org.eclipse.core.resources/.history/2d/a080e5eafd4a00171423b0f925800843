@@ -1,0 +1,73 @@
+package com.estore.dao.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.estore.dao.ConfirmedOrderDao;
+import com.estore.model.CartItem;
+import com.estore.model.ConfirmedOrder;
+import com.estore.model.ConfirmedOrderItem;
+import com.estore.model.CustomerOrder;
+
+@Repository
+@Transactional
+public class ConfirmedOrderDaoImpl implements ConfirmedOrderDao {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	public void populateAndSaveConfirmedOrder(CustomerOrder customerOrder) {
+		// Populate ConfirmedOrder.
+		ConfirmedOrder confirmedOrder = new ConfirmedOrder();
+		System.out.println("--");
+		System.out.println(customerOrder.getCustomer());
+		System.out.println(customerOrder.getBillingAddress());
+		System.out.println(customerOrder.getShippingAddress());
+		confirmedOrder.setCustomer(customerOrder.getCustomer());
+		confirmedOrder.setBillingAddress(customerOrder.getBillingAddress());
+		confirmedOrder.setShippingAddress(customerOrder.getShippingAddress());
+		this.setOrderedItems(customerOrder, confirmedOrder);
+		confirmedOrder.setGrandTotal(customerOrder.getCart().getGrandTotal());
+		this.setOrderDate(confirmedOrder);
+		confirmedOrder.setFulfilled(false);
+		this.setFulfillmentDate(confirmedOrder);
+
+		// Save ConfirmedOrder.
+		Session session = sessionFactory.getCurrentSession();
+		session.saveOrUpdate(confirmedOrder);
+		session.flush();
+	}
+
+	private void setOrderedItems(CustomerOrder customerOrder, ConfirmedOrder confirmedOrder) {
+		List<ConfirmedOrderItem> confirmedOrderItems = new ArrayList<ConfirmedOrderItem>();
+		List<CartItem> cartItems = customerOrder.getCart().getCartItems();
+		for (CartItem cartItem : cartItems) {
+			ConfirmedOrderItem confirmedOrderItem = new ConfirmedOrderItem();
+			confirmedOrderItem.setProduct(cartItem.getProduct());
+			confirmedOrderItem.setQuantity(cartItem.getQuantity());
+			confirmedOrderItem.setTotalPrice(cartItem.getTotalPrice());
+			confirmedOrderItem.setConfirmedOrder(confirmedOrder);
+			confirmedOrderItems.add(confirmedOrderItem);
+		}
+		confirmedOrder.setOrderItems(confirmedOrderItems);
+	}
+
+	private void setOrderDate(ConfirmedOrder confirmedOrder) {
+		java.util.Date utilDate = new java.util.Date();
+		// java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+		confirmedOrder.setOrderDate(utilDate);
+	}
+
+	private void setFulfillmentDate(ConfirmedOrder confirmedOrder) {
+		java.util.Date utilDate = new java.util.Date();
+		// java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+		confirmedOrder.setFulfillmentDate(utilDate);
+	}
+
+}

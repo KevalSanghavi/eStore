@@ -1,0 +1,108 @@
+package com.estore.dao.impl;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.estore.dao.OrderDao;
+import com.estore.model.CartItem;
+import com.estore.model.ConfirmedOrder;
+import com.estore.model.CustomerOrder;
+import com.estore.model.Order;
+import com.estore.model.OrderItem;
+
+@Repository
+@Transactional
+public class OrderDaoImpl implements OrderDao {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	public void populateAndSaveOrder(CustomerOrder customerOrder) {
+		// Populate Order.
+		ConfirmedOrder confirmedOrder = new ConfirmedOrder();
+		confirmedOrder.setCustomer(customerOrder.getCustomer());
+		confirmedOrder.setBillingAddress(customerOrder.getBillingAddress());
+		confirmedOrder.setShippingAddress(customerOrder.getShippingAddress());
+		this.setOrderedItems(customerOrder, confirmedOrder);
+		confirmedOrder.setGrandTotal(customerOrder.getCart().getGrandTotal());
+		this.setOrderDate(confirmedOrder);
+		confirmedOrder.setFulfilled(false);
+		this.setFulfillmentDate(confirmedOrder);
+
+		// Save Order.
+		Session session = sessionFactory.getCurrentSession();
+		session.saveOrUpdate(confirmedOrder);
+		session.flush();
+	}
+
+	private void setOrderedItems(CustomerOrder customerOrder, ConfirmedOrder confirmedOrder) {
+		List<OrderItem> orderItems = new ArrayList<OrderItem>();
+		List<CartItem> cartItems = customerOrder.getCart().getCartItems();
+		for (CartItem cartItem : cartItems) {
+			OrderItem orderItem = new OrderItem();
+			orderItem.setProduct(cartItem.getProduct());
+			orderItem.setQuantity(cartItem.getQuantity());
+			orderItem.setTotalPrice(cartItem.getTotalPrice());
+			orderItem.setOrder(confirmedOrder);
+			orderItems.add(orderItem);
+		}
+		confirmedOrder.setOrderItems(orderItems);
+	}
+
+	private void setOrderDate(ConfirmedOrder confirmedOrder) {
+		java.util.Date utilDate = new java.util.Date();
+		// java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+		confirmedOrder.setOrderDate(utilDate);
+	}
+
+	private void setFulfillmentDate(ConfirmedOrder confirmedOrder) {
+		java.util.Date utilDate = new java.util.Date();
+		// java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
+		confirmedOrder.setFulfillmentDate(utilDate);
+	}
+
+}
+
+/*
+ * 
+ * @Id
+ * 
+ * @GeneratedValue private int orderId;
+ * 
+ * @OneToOne
+ * 
+ * @JoinColumn(name = "customerId") private Customer customer;
+ * 
+ * @OneToOne
+ * 
+ * @JoinColumn(name = "billingAddressId") private BillingAddress billingAddress;
+ * 
+ * @OneToOne
+ * 
+ * @JoinColumn(name = "shippingAddressId") private ShippingAddress
+ * shippingAddress;
+ * 
+ * @JoinTable(name = "ordereditems")
+ * 
+ * @javax.persistence.OneToMany(cascade = CascadeType.ALL)
+ * 
+ * @javax.persistence.MapKey(name = "productid") private Map<Integer, Integer>
+ * orderedItems = new HashMap<Integer, Integer>();
+ * 
+ * private double grandTotal;
+ * 
+ * @Temporal(TemporalType.DATE) private Date orderDate;
+ * 
+ * private boolean isFulfilled;
+ * 
+ * @Temporal(TemporalType.DATE) private Date fulfillmentDate;
+ * 
+ */

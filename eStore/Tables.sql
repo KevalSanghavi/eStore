@@ -3,9 +3,9 @@
  * ----------------------------------------------
  * 
  * Authorities:
- * 	authoritiesId:1, authority:ROLE_ADMIN, username:admin
+ * 	INSERT INTO `estore`.`authorities` (`authoritiesId`, `authority`, `username`) VALUES ('1', 'ROLE_ADMIN', 'admin');
  * 
  * Users:
- * 	usersId:1, customerId:0, enabled:1, password:admin, username:admin
+ * 	INSERT INTO `estore`.`users` (`usersId`, `customerId`, `enabled`, `password`, `username`) VALUES ('1', '0', '1', 'admin', 'admin');
  * 
  */

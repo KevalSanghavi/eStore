@@ -27,8 +27,13 @@
 		<transition on="orderConfirmed" to="processOrder" />
 		<transition on="backToCollectShippingDetail" to="collectShippingDetail" />
 	</view-state>
-
+	
 	<action-state id="processOrder">
+		<evaluate expression="confirmedOrderDaoImpl.populateAndSaveConfirmedOrder(order)" />
+		<transition to="clearOrder" />
+	</action-state>
+	
+	<action-state id="clearOrder">
 		<evaluate expression="cartItemDaoImpl.removeAllCartItems(order.cart)" />
 		<transition to="thankCustomer" />
 	</action-state>

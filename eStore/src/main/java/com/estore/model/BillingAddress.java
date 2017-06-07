@@ -92,8 +92,7 @@ public class BillingAddress implements Serializable {
 
 	@Override
 	public String toString() {
-		return "BillingAddress [apartmentNumber=" + apartmentNumber + ", streetName=" + streetName + ", city=" + city
-				+ ", state=" + state + ", country=" + country + ", zipCode=" + zipCode + "]";
+		return apartmentNumber + ", " + streetName + ", " + city + ", " + state + ", " + country + ", " + zipCode;
 	}
 
 }

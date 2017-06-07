@@ -135,4 +135,10 @@ public class Product implements Serializable {
 	public void setCartItemList(List<CartItem> cartItemList) {
 		this.cartItemList = cartItemList;
 	}
+
+	@Override
+	public String toString() {
+		return "Name: " + productName + ", Category: " + productCategory + ", Condition: " + productCondition;
+	}
+
 }

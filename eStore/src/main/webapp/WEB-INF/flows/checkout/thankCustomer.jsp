@@ -7,7 +7,7 @@
               <div class="container">
                   <h2 class="alert alert-success">Thank you for your business!</h2>
 
-                  <p class="lead">Your order will be shipped in three business days!</p>
+                  <p class="lead">Your order will be shipped soon!</p>
               </div>
         </section>
 

@@ -1,0 +1,35 @@
+package com.estore.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+public class OrderItem implements Serializable {
+
+	private static final long serialVersionUID = 8092571542841662503L;
+
+	@Id
+	@GeneratedValue
+	private int orderItemId;
+
+	@ManyToOne
+	@JoinColumn(name = "confirmedOrderId")
+	@JsonIgnore
+	private ConfirmedOrder confirmedOrder;
+
+	@ManyToOne
+	@JoinColumn(name = "productId")
+	private Product product;
+
+	private int quantity;
+	private double totalPrice;
+
+
+}

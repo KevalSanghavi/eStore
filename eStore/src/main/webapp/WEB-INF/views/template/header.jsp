@@ -73,10 +73,7 @@
 						</ul>
 						<ul class="nav navbar-nav pull-right">
 							<c:if test="${pageContext.request.userPrincipal.name != null}">
-								<li><a>Welcome:
-										${pageContext.request.userPrincipal.name}</a></li>
-								<li><a href="<c:url value="/j_spring_security_logout" />">
-									<span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
+								<li><a>Hello, ${pageContext.request.userPrincipal.name}</a></li>
 								<c:if
 									test="${pageContext.request.userPrincipal.name != 'admin'}">
 									<li><a href="<c:url value="/customer/cart" />">
@@ -87,10 +84,12 @@
 									<li><a href="<c:url value="/admin" />">
 										<span class="glyphicon glyphicon-user"></span>&nbsp; Admin</a></li>
 								</c:if>
+								<li><a href="<c:url value="/j_spring_security_logout" />">
+									<span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
 							</c:if>
 							<c:if test="${pageContext.request.userPrincipal.name  == null}">
 								<li><a href="<c:url value="/login/" />">
-									<span class="glyphicon glyphicon-log-in"></span>&nbsp; Login</a></li>
+									<span class="glyphicon glyphicon-log-in"></span>&nbsp; Log In</a></li>
 								<li><a href="<c:url value="/register" />">
 									<span class="glyphicon glyphicon-pencil"></span>&nbsp; Sign Up</a></li>
 							</c:if>

@@ -1,0 +1,11 @@
+package com.estore.model;
+
+import java.io.Serializable;
+
+public class OrderItem implements Serializable {
+	
+	private static final long serialVersionUID = 8092571542841662503L;
+	
+	
+
+}

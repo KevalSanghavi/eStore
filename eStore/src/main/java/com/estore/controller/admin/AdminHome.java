@@ -37,7 +37,6 @@ public class AdminHome {
 
 	@RequestMapping("/customer")
 	public String customerManagement(Model model) {
-
 		List<Customer> customerList = customerService.getAllCustomers();
 		model.addAttribute("customerList", customerList);
 

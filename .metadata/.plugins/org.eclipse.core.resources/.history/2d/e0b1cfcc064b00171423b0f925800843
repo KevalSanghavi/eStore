@@ -1,0 +1,28 @@
+package com.estore.controller.admin;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.estore.model.ConfirmedOrder;
+import com.estore.service.ConfirmedOrderService;
+
+@Controller
+@RequestMapping("/admin")
+public class AdminConfirmedOrders {
+
+	@Autowired
+	private ConfirmedOrderService confirmedOrderService;
+
+	@RequestMapping("/pendingOrders")
+	public String pendingOrders(Model model) {
+		List<ConfirmedOrder> confirmedOrderList = confirmedOrderService.getAllPendingOrders();
+		model.addAttribute("confirmedOrderList", confirmedOrderList);
+
+		return "pendingOrders";
+	}
+
+}

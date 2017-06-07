@@ -60,10 +60,10 @@
                         <c:if test="${pageContext.request.userPrincipal.name!=null && 
                         	pageContext.request.userPrincipal.name!='admin'}">
 	                        <a href="#" class="btn btn-success btn-large" ng-click="addToCart('${product.productId}')">
-	                           <span class="glyphicon glyphicon-hand-right"></span>&nbsp; Order Now</a>
+	                           <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; Order Now</a>
 	                        &nbsp;
 	                        <a href="<spring:url value="/customer/cart" />" class="btn btn-info">
-	                        	<span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; View Cart</a>
+	                        	<span class="glyphicon glyphicon-hand-right"></span>&nbsp; View Cart</a>
 						</c:if>
 						
                     </p>

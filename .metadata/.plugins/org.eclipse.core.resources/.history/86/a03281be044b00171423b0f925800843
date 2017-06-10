@@ -1,5 +1,0 @@
-package com.estore.service.impl;
-
-public class ConfirmedOrderServiceImpl {
-
-}

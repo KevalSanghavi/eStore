@@ -1,12 +1,12 @@
 
 ### Description
 
-This is an eCommerce web application impelemnted with Java, Spring, Hibernate, MySQL, JSP, Angular, etc. The functionalities include product searching and viewing, shopping cart, checkout, customer registration, product inventory management, order management, customer management, etc.
+This is an eCommerce web application implemented with Java, Spring, Hibernate, MySQL, JSP, Angular, JavaScript, etc. The functionalities include product searching and viewing, shopping cart, checkout, customer registration, product inventory management, order management, customer management, login, etc.
 
 ### Technologies
 
 In a nutshell:
-Java, Spring, Hibernate, MySQL, JSP, Angular.
+Java, Spring, Hibernate, MySQL, JSP, Angular, JavaScript, etc.
 
 In detail:
 Java, Spring MVC, Spring Security, Spring REST, Spring Web Flow, Spring Data, JPA, Hibernate, MySQL, JSP, Angular, Bootstrap, JavaScript, HTML/CSS.

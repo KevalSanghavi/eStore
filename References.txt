@@ -1,0 +1,12 @@
+
+References:
+----------
+
+https://projects.spring.io/spring-framework/
+https://www.tutorialspoint.com/spring/spring_overview.htm
+http://hibernate.org/orm/
+https://www.tutorialspoint.com/hibernate/
+https://www.udemy.com/courses/search/?q=spring&src=ukw
+https://www.youtube.com/playlist?list=PLC97BDEFDCDD169D7
+https://www.javatpoint.com/jsp-tutorial
+http://getbootstrap.com/components/

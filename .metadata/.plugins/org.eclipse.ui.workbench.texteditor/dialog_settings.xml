@@ -8,14 +8,14 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="tomcat"/>
+			<item value="tomca"/>
+			<item value="rest"/>
 			<item value="CustomerOrder"/>
 			<item value="spring-security-config"/>
 			<item value="isFulfilled"/>
 			<item value="populateAndSaveConfirmedOrder"/>
 			<item value="cart"/>
-			<item value="cartItemDaoImpl"/>
-			<item value="InvalidCartWarning"/>
-			<item value="removeFromCart"/>
 		</list>
 		<list key="replacehistory">
 		</list>

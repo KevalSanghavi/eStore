@@ -8498,3 +8498,24 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/eStore/pom.xml
 2017-06-08 17:03:44,524 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-06-08 17:03:44,525 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-06-08 17:03:44,526 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 17:04:26,584 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.kevalsanghavi:eStore:0.0.1-SNAPSHOT @ E:\Eclipse Workspaces\workspace5\eStore\pom.xml.
+2017-06-08 17:04:30,414 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 17:04:30,424 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 17:04:30,426 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 17:04:30,427 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 18:29:48,484 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-09 18:29:48,525 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 18:29:48,528 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-09 18:29:48,530 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 22:04:05,159 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-09 22:04:05,172 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 22:04:05,175 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-09 22:04:05,176 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 22:41:51,429 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for eStore
+2017-06-09 22:41:56,804 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-09 22:41:56,807 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 22:41:56,807 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-09 22:41:56,807 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 22:41:56,807 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of eStore
+2017-06-09 22:41:56,807 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for eStore
+2017-06-09 22:41:56,839 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

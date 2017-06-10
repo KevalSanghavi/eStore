@@ -2,3 +2,5 @@
 .recommenders/
 RemoteSystemsTempFiles/
 Servers/
+eStore/.settings/
+eStore/target/
